@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(https://fonts.googleapis.com/css?family=Montserrat);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #850101;
+    overflow: hidden;
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.card {
+    translate: -150px;
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    perspective: 1200px;
+    -webkit-perspective: 1200px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: rotate(-5deg);
+    translate: 0;
+}
+
+.card:hover .outside {
+    transform: rotateY(-150deg);
+}
+
+.outside, .inside {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+}
+.inside {
+    background: linear-gradient(to right, rgb(228, 214, 197), antiquewhite 30%);
+    left: 50%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.inside::-webkit-scrollbar {
+    display: none;
+}
+
+.outside {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 1s;
+}
+
+.outside p {
+    font-size: 23px;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.front, .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(0deg);
+    background-color: antiquewhite;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: linear-gradient(to left, rgb(228, 214, 197), antiquewhite 30%);
+}
+
+#cover {
+    width: inherit;
+    height: inherit;
+    padding-bottom: 30px;
+}
+
+.inside p, h4 {
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow-wrap: break-word;
+}
+
+.back {
+    display: block;
+}
+
+.back img {
+    width: 52%;
+    padding: 7px;
+}
+
