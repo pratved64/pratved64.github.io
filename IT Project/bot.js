@@ -160,7 +160,7 @@ function analyse(message) {
     }
 
     if (msgTag === "add" || msgTag === "sub" || msgTag === "mul" || msgTag === "div" ) {
-        parts = message.split();
+        parts = message.split("");
         n1 = parseInt(parts[0]);
         n2 = parseInt(parts[parts.length - 1]);
     }
