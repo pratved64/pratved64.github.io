@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Pratbot: Reviews</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="nav">
+            <a href="index.html" id="homeLogo"><img src="logo.png" alt="pratbot logo" id="logo"></a>
+            <a href="bot.html" id="pages">Chatbot</a>
+            <a href="about.html" id="pages">About</a>
+            <a href="reviews.html" id="active">Reviews</a>
+        </div>
+        <p style="text-align: center; font-size: 48;" id="head">Pratbot. Tested.</p> <hr width="60%" color="#555">
+        <p id="content">Pratbot was tested by a small group of beta testers that fit a varying range of requirments. This is what the people think.</p> <br>
+
+        <div class="reviews">
+            <div id="revTab">
+                <p class="rev" id="content" style="padding-bottom: 7px;"><i>Tester 1</i></p>
+                <div id="reviewStar">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                </div>
+                <p class="comments">It's pretty cool, I'd love to see more in the future!</p>
+            </div>
+            <div id="revTab">
+                <p class="rev" id="content" style="padding-bottom: 7px;"><i>Tester 2</i></p>
+                <div id="reviewStar">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                </div>
+                <p class="comments">Very cool, fun to mess around with.</p>
+            </div>
+            <div id="revTab">
+                <p class="rev" id="content" style="padding-bottom: 7px;"><i>Tester 3</i></p>
+                <div id="reviewStar">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                </div>
+                <p class="comments">I like the color schemes, it fits well with the robot!</p>
+            </div>
+            <div id="revTab">
+                <p class="rev" id="content" style="padding-bottom: 7px;"><i>Tester 4</i></p>
+                <div id="reviewStar">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                </div>
+                <p class="comments">Wish it could do more :(</p>
+            </div>
+            <div id="revTabBottom">
+                <p class="rev" id="content" style="padding-bottom: 7px;"><i>Tester 5</i></p>
+                <div id="reviewStar">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                    <img id="starImg" src="star.png">
+                </div>
+                <p class="comments">Pratbot is so cool I'd love to have an app for it!</p>
+            </div>
+        </div>
+
+        <p id="content">The most relevant reviews have been picked and displayed. 
+            The website has been tested by different types of people, from college students, 
+            to working adults via a google form. You can leave a review of the website as well by 
+            clicking the "review" button below!
+        </p> <br>
+        <button onclick="review()" id="reviewButton">Review!</button>
+        <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSeQuHxaNB-pV13JHmN7TbbRxneeHvgAU5AnOCH2v4NG94pJKA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0" style="display: none;">Loading…</iframe>
+
+        <script>
+            function review() {
+                const frame = document.getElementById("form");
+                const button = document.getElementById("reviewButton");
+
+                if (frame.style.display === "none") {
+                    frame.style.display = "initial";
+                    button.innerHTML = "Not interested...";
+                }
+                else {
+                    frame.style.display = "none";
+                    button.innerHTML = "Review!";
+                }
+                
+            }
+        </script>
+    </body>
+</html>

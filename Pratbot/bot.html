@@ -1,0 +1,32 @@
+<html>
+    <head> 
+        <title>Pratbot: The pinnacle of innovation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="nav">
+            <a href="index.html" id="homeLogo"><img src="logo.png" alt="pratbot logo" id="logo"></a>
+            <a href="bot.html" id="active">Chatbot</a>
+            <a href="about.html" id="pages">About</a>
+            <a href="reviews.html" id="pages">Reviews</a>
+        </div>
+        <br>
+        <div id="chatbox">
+            <input type="text" id="user-input" name="userinput" placeholder="Say something to Pratbot...">
+            <button onclick="getValue()" style="font-family: 'Montserrat'; margin-top: 8px;" id="send"><img src="send_button.png" alt="Send" id="sImg"></button> <br>
+            <p style="text-align: center; font-size: 24px;" id="content">PRATBOT SAYS...</p>
+            <div id="responseBox"></div>
+        </div>
+        <hr width="75%" color="#333" size="2px">
+
+        <p id="content" >Pratbot is a simple chatbot that I have developed. It can perform basic tasks 
+            and analyses inputs based on keywords. You can find more info about how Pratbot 
+            works and what it can do on the <a href="about.html" id="inline-link">about</a> page. <br> <br>
+            Try entering a simple greeting in the box above, and see how Pratbot reacts! 
+            All current capabilities of Pratbot are listed in the about page. 
+        </p>
+
+        <script src="bot.js"></script>
+    </body>
+</html>
