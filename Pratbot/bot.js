@@ -20,7 +20,8 @@ const ioMap = {
     "/" : "div",
     "weather" : "weather",
     "temperature" : "weather",
-    "help" : "help"
+    "help" : "help",
+    "tanisha" : "tan"
 };
 
 const responses = {
@@ -35,6 +36,8 @@ const responses = {
     "sub" : ["Result: ", "Difference: "],
     "mul" : ["Result: ", "Product: "],
     "div" : ["Result: ", "Quotient: "],
+    "tan" : ["Hello there Tanisha, I've been given special instructions to tell you that you're a clown.",
+             "Ah yes, we've been expecting you."],
     "help" : ["I can perform an array of functions, from performing arithmetic operations, to telling you jokes. Please check the about page for complete information."]
 };
 
