@@ -1,4 +1,3 @@
-
 // Static variables
 
 var userMessage = "";
@@ -8,33 +7,21 @@ var listening = false;
 var link = "https://weather.com/en-IN/weather/today/l/b4a4461bf7dda2caba2c626bd09b3771a3bdfe8366f2c0cf5fe1bdd08bfbe8b7";
 var MTag;
 
-// Sentences
-
-const jokes = ["I never trust stairs...they're always up to something", 
-                "What kind of shoes do burglars wear? Sneakers", 
-                "How do celebrities stay cool? They have many fans!",
-                "What has four wheel and flies? A garbage truck",
-                "you. you're the joke.",
-                "whats common between twin towers and genders? first there were 2 of them now it is a sensitive topic "];
-
-const greetings = ["Hello there!", "Hello!", "Hi!", "Hello, how can I help you?"];
-
+// Maps
 const ioMap = {
     "hello" : "greeting",
     "hi" : "greeting",
     "how are you" : "greeting",
     "joke" : "joke",
     "make me laugh" : "joke",
-    "talk about something" : "listen",
-    "talk to you" : "listen",
-    "tell you" : "listen",
     "+" : "add",
     "-" : "sub",
     "*" : "mul",
     "/" : "div",
     "weather" : "weather",
     "temperature" : "weather",
-    "help" : "help"
+    "help" : "help",
+    "tanisha":"tan"
 };
 
 const responses = {
@@ -49,6 +36,8 @@ const responses = {
     "sub" : ["Result: ", "Difference: "],
     "mul" : ["Result: ", "Product: "],
     "div" : ["Result: ", "Quotient: "],
+    "tan" : ["Hello there Tanisha, I've been given special instructions to tell you that you're a clown.",
+             "Ah yes, we've been expecting you."],
     "help" : ["I can perform an array of functions, from performing arithmetic operations, to telling you jokes. Please check the about page for complete information."]
 };
 
@@ -66,30 +55,6 @@ function getValue() {
 
     document.getElementById("responseBox").scrollTop = 500;
 }
-
-/*function compute(message) {
-    var response = "";
-    message = message.toLowerCase();
-
-    if (message.includes("joke")) {
-        index = parseInt(Math.floor(Math.random() * jokes.length));
-        response = jokes[index];
-    }
-    else if (message.includes("hi") || message.includes("hello")) {
-        index = parseInt(Math.floor(Math.random() * greetings.length));
-        response = greetings[index];
-        console.log(index);
-    }
-    else if (message === "never gonna give you up") {
-        response = "never gonna let you down....thats illegal";
-    }
-    else {
-        response = "Sorry, I currently do not know how to answer that";
-    }
-
-    console.log(response);
-    return response;
-}*/
 
 function compute(message) {
     MTag = analyse(message);
@@ -114,7 +79,6 @@ function compute(message) {
 
 
     console.log(result);
-    console.log(n1 / n2)
     return result;
 }
 
@@ -160,7 +124,8 @@ function analyse(message) {
     }
 
     if (msgTag === "add" || msgTag === "sub" || msgTag === "mul" || msgTag === "div" ) {
-        parts = message.split(" ");
+        parts = message.split("");
+        console.log(parts);
         n1 = parseInt(parts[0]);
         n2 = parseInt(parts[parts.length - 1]);
     }
@@ -168,8 +133,4 @@ function analyse(message) {
         listening = true;
 
     return msgTag;
-}
-
-function listening(msg) {
-    console.log("listening mode activated!");
 }
