@@ -1,0 +1,134 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('//fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+@keyframes open {
+    from {
+        transform: translate(0, -80%) scale(0.1);
+        transition: transform 0.4s, top 0.4s;
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0%) scale(1);
+        transition: transform 0.4s, top 0.4s;
+        opacity: 100%;
+    }
+}
+
+body {
+    font-family: 'Ubuntu Mono', sans-serif;
+    background: #568CBF;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.page {
+    display: block;
+    margin: 2%;
+    width: 96%;
+    height: 100%;
+    border-radius: 25px;
+    padding-top: 45px;
+    background-color: #9accff81;
+    box-shadow: 10px 10px #0000002c;
+}
+
+.container {
+    background: #568CBF;
+    margin-left: 31.5%;
+    display: flex;
+    flex-flow: column;
+    padding: 2px;
+    width: 36.5%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 7px 7px #0000004f;
+    border: 1px solid rgb(63, 63, 63);
+}
+
+#resultBox {
+    margin: 2%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5% 5%;
+    width: 75%;
+    font-size: 26;
+    text-align: left;
+    float: left;
+    height: 20%;
+    color: #ffffff;
+    user-select: none;
+    border-radius: 8px;
+    background-color: #7f99b1;
+}
+
+.buttons {
+    width: 85%;
+}
+
+.button {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 24;
+    user-select: none;
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    color: #ffffff;
+    height: 40px;
+    padding-top: 20px;
+    border-radius: 40px;
+    background-color: #7f99b1;
+}
+.button:hover{
+    background-color: white;
+    color: #7f99b1;
+}
+
+
+#hxv {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(36, 35, 35, 0.479);
+    color: white;
+}
+#hxv b {
+    font-size: 64px;
+}
+
+#popup {
+    position: fixed;
+    text-align: center;
+    width: 700px;
+    height: 520px;
+    background-color: red;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    top: 15%;
+    transform: scale(0);
+    left: 22.5%;
+    
+}
+
+#pHead {
+    font-size: 36;
+    font-weight: bold;
+}
+#pDesc {
+    font-size: 24;
+}
+#pButton {
+    border: none;
+    background-color: rgb(120, 0, 0);
+    color: white;
+    font-size: 26;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    padding: 15px;
+}
+#pButton:hover {
+    background-color: white;
+    color: black;
+}
