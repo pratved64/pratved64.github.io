@@ -105,18 +105,18 @@ function scream() {
       "AREN'T YOU ASIAN DO IT YOURSELF HAIYAA",
       "This is why you don't get marks in your Maths exams",
       "Lamentable.",
-      //"Do it yourself mf",
+      "Do it yourself mf",
       "WHAT DO I LOOK LIKE PANDA EXPRESS TO YOU",
       "My 5 year old son can do that in his head",
       "WHY CAN'T YOU DO IT HUH",
       "Placing an order for Maths for Dummies...",
-      //"Dissatisfied? Now you know what she feels like",
+      "Dissatisfied? Now you know what she feels like",
       "you're a joke",
    ];
 
    var i = Math.round(Math.random() * (insults.length - 1))
    disp.innerHTML = insults[i];
-   setTimeout(function() {disp.innerHTML = "";}, 3000);
+   setTimeout(function() {disp.innerHTML = "";}, 2000);
 }
 
 function subscribe() {
