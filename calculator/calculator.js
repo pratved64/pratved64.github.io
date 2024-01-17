@@ -57,7 +57,7 @@ function clk(evt) {
 function interpret(exp) {
    //alert(disp.innerHTML);
    for (var i = 0; i < exp.length; i++) {
-      if (exp === '80085') {
+      if (exp === '8264742') {
          tanSpecial();
          break;
       }
