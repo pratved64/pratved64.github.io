@@ -109,7 +109,7 @@ body::-webkit-scrollbar {
     top: 15%;
     transform: scale(0);
     left: 22.5%;
-    
+    animation: open 0.2s linear 120s 1 forwards;
 }
 
 #pHead {
