@@ -116,14 +116,14 @@ function scream() {
 
    var i = Math.round(Math.random() * (insults.length - 1))
    disp.innerHTML = insults[i];
-   setTimeout(function() {disp.innerHTML = "";}, 2000);
+   setTimeout(function() {disp.innerHTML = "";}, 3000);
 }
 
 function subscribe() {
-   window.location.replace('/error.html');
+   window.location.replace('/calculator/error.html');
 }
 
 function tanSpecial() {
    alert("i made special theme for you <3");
-   window.location.replace('/tan.html');
+   window.location.replace('calculator/tan.html');
 }

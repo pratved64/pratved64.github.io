@@ -56,7 +56,6 @@ body::-webkit-scrollbar {
     width: 75%;
     font-size: 26;
     text-align: left;
-    float: left;
     height: 20%;
     color: #ffffff;
     user-select: none;
@@ -67,13 +66,19 @@ body::-webkit-scrollbar {
 .buttons {
     width: 85%;
 }
+.buttons table {
+    table-layout: auto;
+}
+.row {
+    width: 9.7%;
+}
 
 .button {
     border: 1px solid rgb(0, 0, 0);
     font-size: 24;
     user-select: none;
     padding: 5px;
-    width: 120px;
+    width: 90%;
     text-align: center;
     color: #ffffff;
     height: 40px;
@@ -81,7 +86,7 @@ body::-webkit-scrollbar {
     border-radius: 40px;
     background-color: #7f99b1;
 }
-.button:hover{
+.button:hover {
     background-color: white;
     color: #7f99b1;
 }
@@ -109,7 +114,7 @@ body::-webkit-scrollbar {
     top: 15%;
     transform: scale(0);
     left: 22.5%;
-    animation: open 0.2s linear 120s 1 forwards;
+    animation: open 0.2s linear 120s normal forwards;
 }
 
 #pHead {

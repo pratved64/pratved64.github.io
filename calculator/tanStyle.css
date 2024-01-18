@@ -56,7 +56,6 @@ body::-webkit-scrollbar {
     width: 75%;
     font-size: 26;
     text-align: left;
-    float: left;
     height: 20%;
     color: #ffffff;
     user-select: none;
@@ -67,13 +66,19 @@ body::-webkit-scrollbar {
 .buttons {
     width: 85%;
 }
+.buttons table {
+    table-layout: auto;
+}
+.row {
+    width: 9.7%;
+}
 
 .button {
     border: 1px solid rgb(0, 0, 0);
     font-size: 24;
     user-select: none;
     padding: 5px;
-    width: 120px;
+    width: 90%;
     text-align: center;
     color: #ffffff;
     height: 40px;
@@ -83,7 +88,7 @@ body::-webkit-scrollbar {
 }
 .button:hover{
     background-color: white;
-    color: #7f99b1;
+    color: #000000;
 }
 
 
@@ -91,19 +96,11 @@ body::-webkit-scrollbar {
     text-align: center;
     font-size: 42px;
     font-weight: bold;
-    text-shadow: 2px 2px rgba(36, 35, 35, 0.479);
+    text-shadow: 2px 2px #f7e7066e;
     color: white;
 }
 #hxv b {
     font-size: 64px;
-}
-#hxvi {
-    text-align: center;
-    font-size: 32px;
-    text-shadow: 2px 2px rgba(36, 35, 35, 0.479);
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
 }
 
 #popup {
