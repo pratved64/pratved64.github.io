@@ -125,5 +125,5 @@ function subscribe() {
 
 function tanSpecial() {
    alert("i made special theme for you <3");
-   window.location.replace('calculator/tan.html');
+   window.location.replace('/calculator/tan.html');
 }
