@@ -37,6 +37,10 @@ function clk(evt) {
          disp.innerHTML += num;
       }
       else if (num === '=') {
+         if (disp.innerHTML === '8264742') {
+            tanSpecial();
+            return;
+         }
          let x = Math.round(Math.random() * 2);
          if (x == 2) {
             interpret(disp.innerHTML);
