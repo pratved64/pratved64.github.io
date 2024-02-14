@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Quicksand;
+    src: url('quicksand/Quicksand_Light.otf');
+}
+
+@font-face {
+    font-family: Quicksand-bold;
+    src: url('quicksand/Quicksand_Bold.otf');
+}
+
+@keyframes expand {
+    0% {transform: translateY(0) scaleX(1.2) scaleY(1.2); opacity: 100%;}
+    100% {transform: translateY(25%) scaleX(3) scaleY(3); opacity: 0%;}
+}
+
+@keyframes fade {
+    0% {
+        opacity: 100%;
+        background: linear-gradient(rgb(139, 139, 204), rgb(177, 161, 204));
+    }
+    25% {
+        opacity: 55%;
+        background: linear-gradient(rgb(139, 139, 204), rgb(177, 161, 204));
+    }
+    50% {
+        opacity: 30%;
+        background: linear-gradient(rgb(252, 58, 58), rgb(252, 21, 21));
+    }
+    75% {
+        opacity: 50%;
+        background: linear-gradient(rgb(252, 58, 58), rgb(252, 21, 21));
+    }
+    100% {
+        opacity: 100%;
+        background: linear-gradient(rgb(252, 58, 58), rgb(252, 21, 21));
+    }
+}
+
+body {
+    background-color: rgba(59, 62, 97, 0.712);
+    font-family: Quicksand, 'sans-serif';
+}
+
+.container {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;
+    background: linear-gradient(rgb(139, 139, 204), rgb(177, 161, 204));
+    border-radius: 20px;
+    opacity: 60%;
+}
+
+#heart {
+    position: absolute;
+    width: 25%;
+    height: 42.5%;
+    top: 25%;
+    left: 36%;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+#heart:hover {
+    transform: scale(1.2);
+    border: 1px rgba(255, 255, 255, 0) solid;
+}
+
+#heart:hover #boxtext {
+    opacity: 100%;
+}
+
+#boxtext {
+    position: absolute;
+    top: 100%;
+    left: 29%;
+    font-size: 32px;
+    color: white;
+    opacity: 0%;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.circle {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background-color: rgb(252, 58, 58);
+    border-radius: 100px;
+}
+
+#c1 {
+    top: 15%;
+    left: 20%;
+}
+
+#c2 {
+    top: 15%;
+    left: 45%;
+}
+
+.rect {
+    position: absolute;
+    top: 33.65%;
+    left: 34%;
+    transform: rotate(45deg);
+    width: 105px;
+    height: 105px;
+    background-color: rgb(253, 57, 57);
+}
+
+#text {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.226);
+    color: white;
+    visibility: hidden;
+}
+
+#text p {
+    padding: 5%;
+    font-size: 20px;
+}
+
+#bb {
+    font-family: Quicksand-bold, 'sans-serif';
+    padding-bottom: none;
+}
+
+#photo {
+    position: absolute;
+    width: 40%;
+    top: 10%;
+    left: 50%;
+    visibility: hidden;
+}
+
+#b {
+    position: absolute;
+    left: 65%;
+    top: 90%;
+    text-align: right;
+    color: white;
+    visibility: hidden;
+}
