@@ -11,7 +11,8 @@
 }
 
 body {
-    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#0e0e0e)) fixed;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#0e0e0e)) fixed;*/
+    background: #bca2ce;
     font-family: "Montserrat", sans-serif;
     display: block;
 }
@@ -112,7 +113,7 @@ video {
 }
 
 #info input {
-    background-color: #000;
+    background-color: #9487aa;
     border: 1px solid white;
     border-radius: 5px;
     font-size: 20px;
