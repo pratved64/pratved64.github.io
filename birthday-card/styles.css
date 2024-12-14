@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Bebas%20Neue);
+
+@keyframes colors {
+    0% {background-color: #292929; box-shadow: 0 0 10px 5px #292929;}
+    20% {background-color: #f8e683; box-shadow: 0 0 10px 5px #f8e683;}
+    40% {background-color: #36c96e; box-shadow: 0 0 10px 5px #36c96e;}
+    60% {background-color: #33ccff; box-shadow: 0 0 10px 5px #33ccff;}
+    80% {background-color: #a52f8d; box-shadow: 0 0 10px 5px #a52f8d;}
+    100% {background-color: #942323; box-shadow: 0 0 10px 5px #942323;}
+}
+
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#0e0e0e)) fixed;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 0 0 2px #333;
+}
+
+.dancingCat {
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    background-color: #f0dea4;
+    color: #000;             
+    border: none;             
+    border-radius: 5px;
+    padding: 15px 32px;       
+    text-align: center;       
+    font-size: 16px;          
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    transition: box-shadow 0.2s ease; 
+    width: 15%;
+    margin-left: 42%;
+    user-select: none;
+}
+  
+button:hover {
+    background-color: #ffffff;
+    text-shadow: 0 0 0 #fff;
+    box-shadow: 0 0 10px 5px #f8e683;
+}
+
+video {
+    width: 100%;
+    height: 80%;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.2;
+    display: inline;
+    position: fixed;
+    margin-left: -20%;
+    margin-top: 0;
+}
+
+#container {
+    display: absolute;
+    background-color: white;
+    color: black;
+    border: 10px solid white;
+    position: absolute;
+    margin-left: 19%;
+    margin-top: 5%;
+    width: 60%;
+    height: 80%;
+    box-shadow: 0 0 10px 5px #292929;
+    transition: opacity 1s ease;
+    border-radius: 8px;
+    animation: colors 4s linear infinite;
+}
+
+.showCard {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hideCard {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#card {
+    border-radius: inherit;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.textbox {
+    position: absolute;
+    top: 19vh;
+    left: 69vh;
+    color: white;
+    transition: opacity 1s ease;
+    font-size: 26px;
+    text-align: center;
+}
+
+#info {
+    margin-left: 79vh;
+}
+
+#info input {
+    background-color: #000;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    transition: box-shadow 1s ease;
+}
+
+#inline {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.link {
+    background-color: #942323;
+    position: absolute;
+    top: 65vh;
+    left: 90vh;
+    height: 25%;
+    width: 10%;
+    z-index: 100;
+    opacity: 0;
+}

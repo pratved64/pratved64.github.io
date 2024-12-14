@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title>Cool stuff!</title>
+        <link rel="stylesheet" href="carouselStyles.css">
+    </head>
+    <body onload="playVid()">
+        <div class="container">
+            <button id="left" class="navButton">
+                <span>&lt</span>
+            </button>
+            <div id="imageContainer">
+                <img src="CarouselPics/1.jpeg" id="disp" alt="PHOTO MISSING O NO">
+            </div>
+            <button id="right" class="navButton">
+                <span>&gt</span>
+            </button>
+        </div>
+        <div id="caption-container">
+            <p id="caption">Lorem Ipsum asdkasgjagjasdk</p>
+        </div>
+        <video autoplay loop id="bgVid">
+            <source src="bgVid.mp4" type="video/mp4">
+        </video>
+
+
+
+        <script src="carousel.js"></script>
+    </body>
+</html>
